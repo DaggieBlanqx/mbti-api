@@ -1,0 +1,35 @@
+{
+		"name":"mbti-api"
+	,	"version": "0.0.1"
+	,	"private": true
+	,	"description": "MBTI API v0.0.1 - Myer-Briggs type indicator questions to develop tests"
+	,	"keywords": [
+			"mbti", "personality test", "Myer-Briggs"
+		]
+	,	"main": "server.js"
+
+	,	"author": "azenkwed"
+	,	"license": "MIT"
+
+	, 	"repository": {
+				"type": "git"
+			, 	"url": "https://github.com/azenkwed/mibti-api.git"
+		}
+	,	"bugs": {
+			"url": "https://github.com/azenkwed/mibti-api/issues"
+		}
+	,	"engines": {
+				"node": "0.10.29"
+		}
+	,	"script":{
+				"start": "node server.js"
+			,	"test": "echo \"Error: no test specified\" && exit 1"
+	}
+	,	"dependencies": {
+				"express": "latest"
+			,	"morgan": "latest"
+			,	"body-parser": "latest"
+			,	"jade": "latest"
+			,	"mongoose": "latest"
+	}
+}

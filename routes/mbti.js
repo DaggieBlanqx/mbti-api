@@ -35,7 +35,7 @@ exports.findAll = function(req, res) {
 	var id = req.query['id'];
 	db.collection('mbtis', function (err, collection) {
 		if (id) {
-			colection.find({"id": new RegExp(id, "i")}).toArray(function(err, items) {
+			collection.find({"id": new RegExp(id, "i")}).toArray(function(err, items) {
 				res.jsonp(items);
 			});
 		}
@@ -58,6 +58,7 @@ exports.findById = function (req, res) {
         });
     });
 }
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 // Populate database with sample data -- Only used once: the first time the application is started.

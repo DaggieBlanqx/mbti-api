@@ -1,5 +1,18 @@
 extends layout
 
+
 block content
-  h1= title
-  p Welcome to #{title}
+
+	.jumbotron
+		.container
+			h1= title
+			p Welcome to #{title}
+			p
+				a(href="/more").btn.btn-primary.btn-large Learn more			
+
+	
+
+	footer &copy;2014 - Abdelkader Djehaf
+
+
+block more 

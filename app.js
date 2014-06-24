@@ -7,6 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , mbti = require('./routes/mbti')
+  , more = require('./routes/more')
   , http = require('http')
   , path = require('path');
 
@@ -30,6 +31,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.get('/more', more.more)
 
 app.get('/mbtis', mbti.findAll);
 app.get('/mbtis/:id', mbti.findById);
